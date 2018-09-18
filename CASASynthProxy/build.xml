@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="javadoc" name="CASASynthProxy">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="CASASynthProxy.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/jssc.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="CASASynthProxy.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="CASASynthProxy">
+        <java classname="org.casa.synthproxy.CASASynthProxy" failonerror="true" fork="yes">
+            <classpath refid="CASASynthProxy.classpath"/>
+        </java>
+    </target>
+    <target name="javadoc">
+	  	<javadoc packagenames="org.casa.synthproxy.*"
+	  	           sourcepath="src"
+	  	           defaultexcludes="yes"
+	  	           destdir="docs/api"
+	  	           author="true"
+	  	           version="true"
+	  	           use="true"
+	  	           windowtitle="Test API"
+	  			   access="private">
+	  	    <doctitle><![CDATA[<h1>CASASynthProxy</h1>]]></doctitle>
+	  	    <bottom><![CDATA[<i>Copyright &#169; 2015 Daniel Parra Tucunduva. All Rights Reserved.</i>]]></bottom>
+	  	    <tag name="todo" scope="all" description="To do:"/>
+	  	    <!--<group title="Group 1 Packages" packages="com.dummy.test.a*"/>
+	  	    <group title="Group 2 Packages" packages="com.dummy.test.b*:com.dummy.test.c*"/>-->
+	  	    <link offline="true" href="http://docs.oracle.com/javase/8/docs/api/" packagelistLoc="C:\tmp"/>
+	  	    <link href="http://docs.oracle.com/javase/8/docs/api/"/>
+		</javadoc>
+    </target>
+</project>

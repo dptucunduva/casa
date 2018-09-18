@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- Macros -->
+	<macros>
+		<!-- Basic commands -->
+		<!-- Philips -->
+		<macro key="TVIOS" data="IR[RC6|0x38|20|50,RC6|0x38|20|50,RC6|0x38|20|500]#IR[RC6|0x59|20|50,RC6|0x59|20|50,RC6|0x59|20|500]#IR[RC6|0x5C|20|50,RC6|0x5C|20|50,RC6|0x5C|20|0]" />
+		<macro key="TVIOD" data="IR[RC6|0x38|20|50,RC6|0x38|20|50,RC6|0x38|20|500]#IR[RC6|0x58|20|50,RC6|0x58|20|50,RC6|0x58|20|500]#IR[RC6|0x5C|20|50,RC6|0x5C|20|50,RC6|0x5C|20|0]" />
+		<!-- Samsung 
+		<macro key="TVIOS" data="IR[SAMSUNG|E0E0807F|32|750]#IR[SAMSUNG|E0E046B9|32|750]#IR[SAMSUNG|E0E016E9|32|0]" />
+		<macro key="TVIOD" data="IR[SAMSUNG|E0E0807F|32|750]#IR[SAMSUNG|E0E0A659|32|750]#IR[SAMSUNG|E0E016E9|32|0]" /> -->
+	
+		<!-- Canais -->
+		<macro key="TDC517" data="IR[NEC|0xE17AA05F|32|200]#IR[NEC|0xE17A807F|32|200]#IR[NEC|0xE17AE01F|32|200]#IR[NEC|0xE17AA857|32|0]" />
+		<macro key="TDC539" data="IR[NEC|0xE17AA05F|32|200]#IR[NEC|0xE17AC03F|32|200]#IR[NEC|0xE17A906F|32|200]#IR[NEC|0xE17AA857|32|0]" />
+		<macro key="TDC538" data="IR[NEC|0xE17AA05F|32|200]#IR[NEC|0xE17AC03F|32|200]#IR[NEC|0xE17A10EF|32|200]#IR[NEC|0xE17AA857|32|0]" />
+		<macro key="TDC537" data="IR[NEC|0xE17AA05F|32|200]#IR[NEC|0xE17AC03F|32|200]#IR[NEC|0xE17AE01F|32|200]#IR[NEC|0xE17AA857|32|0]" />
+		<macro key="TDC570" data="IR[NEC|0xE17AA05F|32|200]#IR[NEC|0xE17AE01F|32|200]#IR[NEC|0xE17A00FF|32|200]#IR[NEC|0xE17AA857|32|0]" />
+		<macro key="TDC571" data="IR[NEC|0xE17AA05F|32|200]#IR[NEC|0xE17AE01F|32|200]#IR[NEC|0xE17A807F|32|200]#IR[NEC|0xE17AA857|32|0]" />
+		<macro key="TDC572" data="IR[NEC|0xE17AA05F|32|200]#IR[NEC|0xE17AE01F|32|200]#IR[NEC|0xE17A40BF|32|200]#IR[NEC|0xE17AA857|32|0]" />
+		<macro key="TDC231" data="IR[NEC|0xE17A40BF|32|200]#IR[NEC|0xE17AC03F|32|200]#IR[NEC|0xE17A807F|32|200]#IR[NEC|0xE17AA857|32|0]" />
+		<macro key="TDC232" data="IR[NEC|0xE17A40BF|32|200]#IR[NEC|0xE17AC03F|32|200]#IR[NEC|0xE17A40BF|32|200]#IR[NEC|0xE17AA857|32|0]" />
+		<macro key="TDC233" data="IR[NEC|0xE17A40BF|32|200]#IR[NEC|0xE17AC03F|32|200]#IR[NEC|0xE17AC03F|32|200]#IR[NEC|0xE17AA857|32|0]" />
+		<macro key="TDC543" data="IR[NEC|0xE17AA05F|32|200]#IR[NEC|0xE17A20DF|32|200]#IR[NEC|0xE17AC03F|32|200]#IR[NEC|0xE17AA857|32|0]" />
+		<macro key="TDC541" data="IR[NEC|0xE17AA05F|32|200]#IR[NEC|0xE17A20DF|32|200]#IR[NEC|0xE17A807F|32|200]#IR[NEC|0xE17AA857|32|0]" />
+		<macro key="TDC542" data="IR[NEC|0xE17AA05F|32|200]#IR[NEC|0xE17A20DF|32|200]#IR[NEC|0xE17A40BF|32|200]#IR[NEC|0xE17AA857|32|0]" />
+
+		<!-- TV/NET -->
+		<macro key="TDVU" data="IR[NEC|0xE17AB04F|32|200]#IR[NEC|0xE17AB04F|32|200]#IR[NEC|0xE17AB04F|32|0]" />
+		<macro key="TDVD" data="IR[NEC|0xE17A708F|32|200]#IR[NEC|0xE17A708F|32|200]#IR[NEC|0xE17A708F|32|0]" />
+		<macro key="TDCBACK" data="IR[NEC|0xE17A8877|32|0]" />
+		<macro key="TDCU" data="IR[NEC|0xE17A08F7|32|0]" />
+		<macro key="TDCD" data="IR[NEC|0xE17A58A7|32|0]" />
+		<macro key="TDONOFF" data="IR[NEC|0xE17A48B7|32|0]" />
+		<macro key="TONOFF" data="IR[RC6|0x0C|20|50,RC6|0x0C|20|50,RC6|0x0C|20|50]" />
+
+		<!-- Cama motorizada -->
+		<macro key="BHU" data="RL[3|3000|0]" />
+		<macro key="BHD" data="RL[7|3000|0]" />
+		<macro key="BFU" data="RL[5|3000|0]" />
+		<macro key="BFD" data="RL[1|3000|0]" />
+		
+		<!-- Ar condicionado -->
+		<macro key="ACON" data="IR[LG|0x880084C|28|0]" />
+		<macro key="AQON" data="IR[LG|0x8804C44|28|0]" />
+		<macro key="AOFF" data="IR[LG|0x88C0051|28|0]" />
+	</macros>
+	
+	<!-- Grupos de comandos 
+	Cada comando pode conter os seguintes atributos:
+	- label: É o texto que vai aparecer na tela, dentro do botão
+	- macro: É a macro que será substituída pelo comando acima
+	- data: É o dado que será enviado ao arduino
+	- tts: É a frase que será falada pelo computador quando da execuçao do comando
+	Os atributos "macro" e "data" são mutuamente excludentes - use somente um. 
+	-->
+	<groups>
+		<group name="Canais">
+			<command label="Globo" macro="TDC517" tts="Globo" />
+			<command label="SportTV" macro="TDC539" tts="espór tevê" />
+			<command label="SportTV 2" macro="TDC538" tts="espór tevê 2" />
+			<command label="SportTV 3" macro="TDC537" tts="espór tevê 3" />
+			<command label="ESPN" macro="TDC570" tts="E S P N" />
+			<command label="ESPN +" macro="TDC571" tts="E S P N mais" />
+			<command label="ESPN Brasil" macro="TDC572" tts="E S P N Brasil" />
+			<command label="Premiere 1" macro="TDC231" tts="espór tevê premiér 1" />
+			<command label="Premiere 2" macro="TDC232" tts="espór tevê premiér 2" />
+			<command label="Premiere 3" macro="TDC233" tts="espór tevê premiér 3" />
+			<command label="VIVA" macro="TDC543" tts="VIVA" />
+			<command label="GNT" macro="TDC541" tts="G N T" />
+			<command label="Multishow" macro="TDC542" tts="Multishou" />
+		</group>
+		<group name="Televisão e NET">
+			<command label="Aumentar Volume" macro="TDVU" tts="Aumentando" />
+			<command label="Diminuir Volume" macro="TDVD" tts="Abaixando" />
+			<command label="Voltar Canal" macro="TDCBACK" tts="Voltando" />
+			<command label="Subir Canal" macro="TDCU" tts="Mudando" />
+			<command label="Descer Canal" macro="TDCD" tts="Mudando" />
+			<command label="NET ON/OFF" macro="TDONOFF" tts="NET" />
+			<command label="Televisão ON/OFF" macro="TONOFF" tts="Televisão" />
+		</group>
+		<group name="Cama motorizada">
+			<command label="Subir cabeça" macro="BHU" tts="Subindo" />
+			<command label="Descer cabeça" macro="BHD" tts="Abaixando" />
+			<command label="Subir pé" macro="BFU" tts="Subindo" />
+			<command label="Descer pé" macro="BFD" tts="Abaixando" />
+		</group>
+		<group name="Ar condicionado e aquecedor">
+			<command label="Resfriar" macro="ACON" tts="Ar Condicionado" />
+			<command label="Aquecer" macro="AQON" tts="Aquecedor" />
+			<command label="Desligar" macro="AOFF" tts="Desligando" />
+		</group>
+	</groups>
+		
+	<!-- Configuração geral
+	Essa seção contém a configuração geral da aplicação. Os parâmetros são:
+	- sourceTVDelay: Tempo de espera, em milisegundos, entre o comando ser recebido do Arduino e o rotacionamento de comandos começar 
+	- cyclingInterval: Intervalo, em milisegundos, que cada comando fica selecionado durante o rotacionamento de comandos 
+	-->
+	<generalConfig>
+		<!-- Tempo, em milissegundos, entre o sensor touch gerar um comando e o rotacionamento de comandos na tela começar. É o tempo para que o CASAActuator
+		comande a TV para chavear para a entrada do CASASynthProxy -->
+		<entry name="sourceTVDelay" value="7000" />
+		<!-- Tempo, em milissegundos, que cada comando fica selecionado durante o rotacionamento de comandos -->
+		<entry name="cyclingInterval" value="2000" />
+		<!-- HOST que será feito bind para aguardar por conexões. Use localhost se não souber o que colocar aqui -->
+		<entry name="bindHost" value="0.0.0.0" />
+		<!-- Ports que será feito bind para aguardar por conexões. Use 11000 se não souber o que colocar aqui -->
+		<entry name="bindPort" value="11000" />
+		<!-- Porta serial que será utilizada para comunicação com o CASAActuator. Se esse parâmetro não existir, a aplicação vai varrer
+		todas as portas até encontrar um Arduino com o sistema CASA instalado. -->
+		<!-- <entry name="COMPort" value="COM3" /> -->
+		<!--  Caminho do executável do BitVoicer caso você queira que o BitVOicer seja iniciado junto com o CASASynthProxy. -->
+		<entry name="BitVoicerEXE" value="C:\Program Files\BitSophia\BitVoicer\BitVoicer.exe" />
+	</generalConfig>
+</config>
